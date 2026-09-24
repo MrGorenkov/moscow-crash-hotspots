@@ -1,0 +1,975 @@
+% refs.bib: Moscow crash hotspots and severity (target: Вестник СибАДИ)
+% Built 2026-09-23. Each entry's metadata was checked against the source in its `verified` field
+% (Crossref API https://api.crossref.org/works/<DOI>; PubMed; the publisher/OJS page;
+% CyberLeninka; proceedings.neurips.cc; cdn.aaai.org). No entry is from memory alone.
+% Custom fields: keywords = core|reserve + topic; indexing = my assessment (Scopus/WoS likely / ВАК / РИНЦ only / preprint);
+% title_en, journal_en, author_en = English metadata for the transliterated References list (In Russ.).
+% "core" = the proposed 40-item list (see notes.md, §0). "reserve" = verified alternates.
+
+% =====================================================================
+% (a) HOTSPOT / BLACK-SPOT IDENTIFICATION METHODS
+% =====================================================================
+
+@article{anderson2009kde,
+  author   = {Anderson, Tessa K.},
+  title    = {Kernel density estimation and {K}-means clustering to profile road accident hotspots},
+  journal  = {Accident Analysis \& Prevention},
+  year     = {2009},
+  volume   = {41},
+  number   = {3},
+  pages    = {359--364},
+  doi      = {10.1016/j.aap.2008.12.014},
+  keywords = {core; hotspot-methods; KDE},
+  indexing = {Scopus/WoS},
+  verified = {Crossref; PubMed PMID 19393780}
+}
+
+@article{xie2008nkde,
+  author   = {Xie, Zhixiao and Yan, Jun},
+  title    = {Kernel Density Estimation of traffic accidents in a network space},
+  journal  = {Computers, Environment and Urban Systems},
+  year     = {2008},
+  volume   = {32},
+  number   = {5},
+  pages    = {396--406},
+  doi      = {10.1016/j.compenvurbsys.2008.05.001},
+  keywords = {core; hotspot-methods; NKDE},
+  indexing = {Scopus/WoS},
+  verified = {Crossref}
+}
+
+@article{ord1995local,
+  author   = {Ord, J. K. and Getis, Arthur},
+  title    = {Local Spatial Autocorrelation Statistics: Distributional Issues and an Application},
+  journal  = {Geographical Analysis},
+  year     = {1995},
+  volume   = {27},
+  number   = {4},
+  pages    = {286--306},
+  doi      = {10.1111/j.1538-4632.1995.tb00912.x},
+  keywords = {core; hotspot-methods; Gi*},
+  indexing = {Scopus/WoS},
+  verified = {Crossref}
+}
+
+@article{schubert2017dbscan,
+  author   = {Schubert, Erich and Sander, J{\"o}rg and Ester, Martin and Kriegel, Hans Peter and Xu, Xiaowei},
+  title    = {{DBSCAN} Revisited, Revisited: Why and How You Should (Still) Use {DBSCAN}},
+  journal  = {ACM Transactions on Database Systems},
+  year     = {2017},
+  volume   = {42},
+  number   = {3},
+  pages    = {19:1--19:21},
+  doi      = {10.1145/3068335},
+  keywords = {core; hotspot-methods; DBSCAN},
+  indexing = {Scopus/WoS},
+  verified = {Crossref (title in Crossref: "DBSCAN Revisited, Revisited"; subtitle as printed by ACM — check on publisher page)}
+}
+
+@article{campello2015hdbscan,
+  author   = {Campello, Ricardo J. G. B. and Moulavi, Davoud and Zimek, Arthur and Sander, J{\"o}rg},
+  title    = {Hierarchical Density Estimates for Data Clustering, Visualization, and Outlier Detection},
+  journal  = {ACM Transactions on Knowledge Discovery from Data},
+  year     = {2015},
+  volume   = {10},
+  number   = {1},
+  pages    = {1--51},
+  doi      = {10.1145/2733381},
+  keywords = {core; hotspot-methods; HDBSCAN},
+  indexing = {Scopus/WoS},
+  verified = {Crossref}
+}
+
+@article{hauer2002eb,
+  author   = {Hauer, Ezra and Harwood, Douglas W. and Council, Forrest M. and Griffith, Michael S.},
+  title    = {Estimating Safety by the Empirical {B}ayes Method: A Tutorial},
+  journal  = {Transportation Research Record: Journal of the Transportation Research Board},
+  year     = {2002},
+  volume   = {1784},
+  number   = {1},
+  pages    = {126--131},
+  doi      = {10.3141/1784-16},
+  keywords = {core; hotspot-methods; empirical-Bayes},
+  indexing = {Scopus/WoS},
+  verified = {Crossref; abstract via OpenAlex}
+}
+
+@article{bil2013kde,
+  author   = {B{\'i}l, Michal and Andr{\'a}{\v s}ik, Richard and Jano{\v s}ka, Zbyn{\v e}k},
+  title    = {Identification of hazardous road locations of traffic accidents by means of kernel density estimation and cluster significance evaluation},
+  journal  = {Accident Analysis \& Prevention},
+  year     = {2013},
+  volume   = {55},
+  pages    = {265--273},
+  doi      = {10.1016/j.aap.2013.03.003},
+  keywords = {core; hotspot-methods; KDE+Monte-Carlo},
+  indexing = {Scopus/WoS},
+  verified = {Crossref; PubMed PMID 23567216}
+}
+
+@article{yu2014comparative,
+  author   = {Yu, Hao and Liu, Pan and Chen, Jun and Wang, Hao},
+  title    = {Comparative analysis of the spatial analysis methods for hotspot identification},
+  journal  = {Accident Analysis \& Prevention},
+  year     = {2014},
+  volume   = {66},
+  pages    = {80--88},
+  doi      = {10.1016/j.aap.2014.01.017},
+  keywords = {core; hotspot-methods; KDE-vs-EB},
+  indexing = {Scopus/WoS},
+  verified = {Crossref; PubMed PMID 24530515}
+}
+
+@article{roy2026hdbscan,
+  author   = {Roy, Subham and Mohammadi, Alireza and Roy, Ranjan},
+  title    = {Road Traffic Accident Hotspot Detection: A {GIS}-Based Machine Learning Approach Using {HDBSCAN} and Spatial Clustering Techniques},
+  journal  = {Geographies},
+  year     = {2026},
+  volume   = {6},
+  number   = {2},
+  pages    = {55},
+  doi      = {10.3390/geographies6020055},
+  keywords = {core; hotspot-methods; HDBSCAN; recent},
+  indexing = {MDPI OA journal; Scopus/ESCI status uncertain (check)},
+  verified = {Crossref; abstract via OpenAlex}
+}
+
+% =====================================================================
+% (b) EVALUATION OF HOTSPOT METHODS BY PREDICTIVE ACCURACY (PAI, hit rate)
+% =====================================================================
+
+@article{chainey2008utility,
+  author   = {Chainey, Spencer and Tompson, Lisa and Uhlig, Sebastian},
+  title    = {The Utility of Hotspot Mapping for Predicting Spatial Patterns of Crime},
+  journal  = {Security Journal},
+  year     = {2008},
+  volume   = {21},
+  number   = {1-2},
+  pages    = {4--28},
+  doi      = {10.1057/palgrave.sj.8350066},
+  keywords = {core; evaluation; PAI; crime},
+  indexing = {Scopus/WoS},
+  verified = {Crossref; PAI attribution confirmed in Hu et al. 2018 (arXiv 2006.00272)}
+}
+
+@article{hu2018stkde,
+  author   = {Hu, Yujie and Wang, Fahui and Guin, Cecile and Zhu, Haojie},
+  title    = {A spatio-temporal kernel density estimation framework for predictive crime hotspot mapping and evaluation},
+  journal  = {Applied Geography},
+  year     = {2018},
+  volume   = {99},
+  pages    = {89--97},
+  doi      = {10.1016/j.apgeog.2018.08.001},
+  keywords = {core; evaluation; PAI-curve; STKDE},
+  indexing = {Scopus/WoS},
+  verified = {Crossref; abstract via Semantic Scholar; preprint arXiv 2006.00272}
+}
+
+@article{thakali2015kriging,
+  author   = {Thakali, Lalita and Kwon, Tae J. and Fu, Liping},
+  title    = {Identification of crash hotspots using kernel density estimation and kriging methods: a comparison},
+  journal  = {Journal of Modern Transportation},
+  year     = {2015},
+  volume   = {23},
+  number   = {2},
+  pages    = {93--106},
+  doi      = {10.1007/s40534-015-0068-0},
+  keywords = {core; evaluation; PAI; crashes},
+  indexing = {Scopus (journal now "Railway Engineering Science")},
+  verified = {Crossref; abstract via OpenAlex}
+}
+
+@article{harirforoush2019sherbrooke,
+  author   = {Harirforoush, Homayoun and Bellalite, Lynda},
+  title    = {A new integrated {GIS}-based analysis to detect hotspots: A case study of the city of {S}herbrooke},
+  journal  = {Accident Analysis \& Prevention},
+  year     = {2019},
+  volume   = {130},
+  pages    = {62--74},
+  doi      = {10.1016/j.aap.2016.08.015},
+  keywords = {core; evaluation; PAI; NKDE; crashes},
+  indexing = {Scopus/WoS},
+  verified = {Crossref; PubMed PMID 27567730 (epub 2016)}
+}
+
+@article{zheng2024bandwidth,
+  author   = {Zheng, Minxue and Xie, Xintong and Jiang, Yutao and Shen, Qiu and Geng, Xiaolei and Zhao, Luyao and Jia, Feng},
+  title    = {Optimizing Kernel Density Estimation Bandwidth for Road Traffic Accident Hazard Identification: A Case Study of the City of {L}ondon},
+  journal  = {Sustainability},
+  year     = {2024},
+  volume   = {16},
+  number   = {16},
+  pages    = {6969},
+  doi      = {10.3390/su16166969},
+  keywords = {core; evaluation; PAI; KDE-bandwidth; recent},
+  indexing = {Scopus/WoS},
+  verified = {Crossref; abstract via OpenAlex}
+}
+
+% =====================================================================
+% (c) TEMPORAL STABILITY OF HOTSPOTS
+% =====================================================================
+
+@article{weisburd2004trajectories,
+  author   = {Weisburd, David and Bushway, Shawn and Lum, Cynthia and Yang, Sue-Ming},
+  title    = {Trajectories of Crime at Places: A Longitudinal Study of Street Segments in the City of {S}eattle},
+  journal  = {Criminology},
+  year     = {2004},
+  volume   = {42},
+  number   = {2},
+  pages    = {283--322},
+  doi      = {10.1111/j.1745-9125.2004.tb00521.x},
+  keywords = {core; stability; crime},
+  indexing = {Scopus/WoS},
+  verified = {Crossref; abstract via OpenAlex}
+}
+
+@article{bil2019spatiotemporal,
+  author   = {B{\'i}l, Michal and Andr{\'a}{\v s}ik, Richard and Sedon{\'i}k, Ji{\v r}{\'i}},
+  title    = {A detailed spatiotemporal analysis of traffic crash hotspots},
+  journal  = {Applied Geography},
+  year     = {2019},
+  volume   = {107},
+  pages    = {82--90},
+  doi      = {10.1016/j.apgeog.2019.04.008},
+  keywords = {core; stability; crashes},
+  indexing = {Scopus/WoS},
+  verified = {Crossref; abstract via OpenAlex}
+}
+
+@inproceedings{resheff2024temporal,
+  author    = {Resheff, Yehezkel S. and Sher, Mali and Adler, Nicole},
+  title     = {The Temporal Dynamics of Road Traffic Crash Hotspots},
+  booktitle = {2024 IEEE 27th International Conference on Intelligent Transportation Systems (ITSC)},
+  year      = {2024},
+  pages     = {1956--1961},
+  doi       = {10.1109/ITSC58415.2024.10919530},
+  keywords  = {core; stability; crashes; recent; conference},
+  indexing  = {Scopus likely (IEEE conf.) — conference, not journal},
+  verified  = {Crossref; abstract via OpenAlex}
+}
+
+% =====================================================================
+% (d) ML CRASH-SEVERITY MODELS, INTERPRETABILITY, IMBALANCE, VALIDATION
+% =====================================================================
+
+@article{savolainen2011review,
+  author   = {Savolainen, Peter T. and Mannering, Fred L. and Lord, Dominique and Quddus, Mohammed A.},
+  title    = {The statistical analysis of highway crash-injury severities: A review and assessment of methodological alternatives},
+  journal  = {Accident Analysis \& Prevention},
+  year     = {2011},
+  volume   = {43},
+  number   = {5},
+  pages    = {1666--1676},
+  doi      = {10.1016/j.aap.2011.03.025},
+  keywords = {core; severity; review},
+  indexing = {Scopus/WoS},
+  verified = {Crossref}
+}
+
+@article{santos2022mlreview,
+  author   = {Santos, Kenny and Dias, Jo{\~a}o P. and Amado, Concei{\c c}{\~a}o},
+  title    = {A literature review of machine learning algorithms for crash injury severity prediction},
+  journal  = {Journal of Safety Research},
+  year     = {2022},
+  volume   = {80},
+  pages    = {254--269},
+  doi      = {10.1016/j.jsr.2021.12.007},
+  keywords = {core; severity; ML-review},
+  indexing = {Scopus/WoS},
+  verified = {Crossref; PubMed PMID 35249605}
+}
+
+@inproceedings{chen2016xgboost,
+  author    = {Chen, Tianqi and Guestrin, Carlos},
+  title     = {{XGBoost}: A Scalable Tree Boosting System},
+  booktitle = {Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+  year      = {2016},
+  pages     = {785--794},
+  doi       = {10.1145/2939672.2939785},
+  keywords  = {core; severity; GBDT; conference},
+  indexing  = {Scopus (conf.) — conference, not journal},
+  verified  = {Crossref}
+}
+
+@inproceedings{prokhorenkova2018catboost,
+  author    = {Prokhorenkova, Liudmila and Gusev, Gleb and Vorobev, Aleksandr and Dorogush, Anna Veronika and Gulin, Andrey},
+  title     = {{CatBoost}: unbiased boosting with categorical features},
+  booktitle = {Advances in Neural Information Processing Systems 31 (NeurIPS 2018)},
+  year      = {2018},
+  url       = {https://proceedings.neurips.cc/paper/2018/hash/14491b756b3a51daac41c24863285549-Abstract.html},
+  keywords  = {core; severity; GBDT; conference},
+  indexing  = {Scopus likely (NeurIPS proceedings) — conference, no DOI},
+  verified  = {proceedings.neurips.cc page (title, authors, vol. 31)}
+}
+
+@article{lundberg2020trees,
+  author   = {Lundberg, Scott M. and Erion, Gabriel and Chen, Hugh and DeGrave, Alex and Prutkin, Jordan M. and Nair, Bala and Katz, Ronit and Himmelfarb, Jonathan and Bansal, Nisha and Lee, Su-In},
+  title    = {From local explanations to global understanding with explainable {AI} for trees},
+  journal  = {Nature Machine Intelligence},
+  year     = {2020},
+  volume   = {2},
+  number   = {1},
+  pages    = {56--67},
+  doi      = {10.1038/s42256-019-0138-9},
+  keywords = {core; severity; SHAP},
+  indexing = {Scopus/WoS},
+  verified = {Crossref (first 8 authors shown by Crossref; last two authors per publisher record — re-check author list on nature.com before final submission)}
+}
+
+@article{dong2022boosting,
+  author   = {Dong, Sheng and Khattak, Afaq and Ullah, Irfan and Zhou, Jibiao and Hussain, Arshad},
+  title    = {Predicting and Analyzing Road Traffic Injury Severity Using Boosting-Based Ensemble Learning Models with {SHAP}ley Additive ex{P}lanations},
+  journal  = {International Journal of Environmental Research and Public Health},
+  year     = {2022},
+  volume   = {19},
+  number   = {5},
+  pages    = {2925},
+  doi      = {10.3390/ijerph19052925},
+  keywords = {core; severity; SHAP; LightGBM; CatBoost},
+  indexing = {Scopus/WoS},
+  verified = {Crossref; abstract via OpenAlex}
+}
+
+@article{zahid2024catboost,
+  author   = {Zahid, Muhammad and Habib, Muhammad Faisal and Ijaz, Muhammad and Ameer, Iqra and Ullah, Irfan and Ahmed, Tufail and He, Zhengbing},
+  title    = {Factors affecting injury severity in motorcycle crashes: Different age groups analysis using {C}atboost and {SHAP} techniques},
+  journal  = {Traffic Injury Prevention},
+  year     = {2024},
+  volume   = {25},
+  number   = {3},
+  pages    = {472--481},
+  doi      = {10.1080/15389588.2023.2297168},
+  keywords = {core; severity; SHAP; CatBoost; SMOTE; recent},
+  indexing = {Scopus/WoS},
+  verified = {Crossref; PubMed PMID 38261528}
+}
+
+@article{chen2025imbalanced,
+  author   = {Chen, Junlan and Liu, Pei and Wang, Shuo and Zheng, Nan and Guo, Xiucheng},
+  title    = {Prediction and interpretation of crash severity using machine learning based on imbalanced traffic crash data},
+  journal  = {Journal of Safety Research},
+  year     = {2025},
+  volume   = {93},
+  pages    = {185--199},
+  doi      = {10.1016/j.jsr.2025.02.018},
+  keywords = {core; severity; imbalance; SHAP; recent},
+  indexing = {Scopus/WoS},
+  verified = {Crossref; PubMed PMID 40483054}
+}
+
+@article{iranitalab2017comparison,
+  author   = {Iranitalab, Amirfarrokh and Khattak, Aemal},
+  title    = {Comparison of four statistical and machine learning methods for crash severity prediction},
+  journal  = {Accident Analysis \& Prevention},
+  year     = {2017},
+  volume   = {108},
+  pages    = {27--36},
+  doi      = {10.1016/j.aap.2017.08.008},
+  keywords = {core; severity; temporal-holdout},
+  indexing = {Scopus/WoS},
+  verified = {Crossref; PubMed PMID 28841408}
+}
+
+@article{roberts2017cv,
+  author   = {Roberts, David R. and Bahn, Volker and Ciuti, Simone and Boyce, Mark S. and Elith, Jane and Guillera-Arroita, Gurutzeta and Hauenstein, Severin and Lahoz-Monfort, Jos{\'e} J. and Schr{\"o}der, Boris and Thuiller, Wilfried and Warton, David I. and Wintle, Brendan A. and Hartig, Florian and Dormann, Carsten F.},
+  title    = {Cross-validation strategies for data with temporal, spatial, hierarchical, or phylogenetic structure},
+  journal  = {Ecography},
+  year     = {2017},
+  volume   = {40},
+  number   = {8},
+  pages    = {913--929},
+  doi      = {10.1111/ecog.02881},
+  keywords = {core; validation; spatial-CV},
+  indexing = {Scopus/WoS},
+  verified = {Crossref (first 8 authors shown; full author list to be re-checked on Wiley page)}
+}
+
+@article{wang2024gwrf,
+  author   = {Wang, Shuli and Gao, Kun and Zhang, Lanfang and Yu, Bo and Easa, Said M.},
+  title    = {Geographically weighted machine learning for modeling spatial heterogeneity in traffic crash frequency and determinants in {US}},
+  journal  = {Accident Analysis \& Prevention},
+  year     = {2024},
+  volume   = {199},
+  pages    = {107528},
+  doi      = {10.1016/j.aap.2024.107528},
+  keywords = {core; spatial-ML; recent},
+  indexing = {Scopus/WoS},
+  verified = {Crossref (via OpenAlex search); PubMed PMID 38447355}
+}
+
+% =====================================================================
+% (e) RUSSIAN STUDIES (Russian-language unless noted)
+% =====================================================================
+
+@article{goryaev2023opendata,
+  author    = {Горяев, Н. К. and Любецкий, С. П.},
+  author_en = {Goryaev, N. K. and Lyubetskii, S. P.},
+  title     = {Сбор, обработка и анализ открытых данных по дорожно-транспортным происшествиям},
+  title_en  = {Open data on road traffic accidents accumulation, processing and analysis},
+  journal   = {Вестник СибАДИ},
+  journal_en= {The Russian Automobile and Highway Industry Journal},
+  year      = {2023},
+  volume    = {20},
+  number    = {5},
+  pages     = {574--585},
+  doi       = {10.26518/2071-7296-2023-20-5-574-585},
+  language  = {russian},
+  keywords  = {core; russian; open-data; GIBDD; target-journal; recent},
+  indexing  = {ВАК; РИНЦ; RCSI White List level 2; DOAJ},
+  verified  = {Crossref; vestnik.sibadi.org OJS meta (RU title, both authors)}
+}
+
+@article{jung2026model,
+  author    = {Юнг, А. А. and Шевцова, А. Г. and Полещенко, Д. А. and Цыганков, Ю. А.},
+  author_en = {Jung, A. A. and Shevtsova, A. G. and Poleshchenko, D. A. and Tsygankov, Y. A.},
+  title     = {Разработка математической модели оценки аварийности объектов на городской улично-дорожной сети},
+  title_en  = {Development of a mathematical model for assessing traffic accident risk on urban road networks},
+  journal   = {Вестник СибАДИ},
+  journal_en= {The Russian Automobile and Highway Industry Journal},
+  year      = {2026},
+  volume    = {23},
+  number    = {2},
+  pages     = {294--305},
+  doi       = {10.26518/2071-7296-2026-23-2-294-305},
+  language  = {russian},
+  keywords  = {core; russian; urban-network-objects; PMD; target-journal; recent},
+  indexing  = {ВАК; РИНЦ; RCSI White List level 2; DOAJ},
+  verified  = {Crossref; vestnik.sibadi.org OJS meta}
+}
+
+@article{lazarev2025multicriteria,
+  author    = {Лазарев, Д. А.},
+  author_en = {Lazarev, D. A.},
+  title     = {Многокритериальный метод оценки уровня безопасности дорожного движения на участке улично-дорожной сети},
+  title_en  = {Multicriteria method for assessing the road traffic safety level on a street network section},
+  journal   = {Вестник СибАДИ},
+  journal_en= {The Russian Automobile and Highway Industry Journal},
+  year      = {2025},
+  volume    = {22},
+  number    = {6},
+  pages     = {952--965},
+  doi       = {10.26518/2071-7296-2025-22-6-952-965},
+  language  = {russian},
+  keywords  = {core; russian; MKDTP; target-journal; recent},
+  indexing  = {ВАК; РИНЦ; RCSI White List level 2; DOAJ},
+  verified  = {Crossref (issued online 2026-01-12, issue 2025); vestnik.sibadi.org OJS meta}
+}
+
+@article{petrov2024iii,
+  author    = {Петров, А. И. and Лихайрова, Е. В.},
+  author_en = {Petrov, A. I. and Likhayrova, E. V.},
+  title     = {Динамика пространственно-временных особенностей формирования риска дорожно-транспортной аварийности в крупных городах России (2015--2023)},
+  title_en  = {Spatial and temporal dynamics of the specifics of the risk of road traffic accidents in large Russian cities (2015--2023)},
+  journal   = {Интеллект. Инновации. Инвестиции},
+  journal_en= {Intellect. Innovations. Investments},
+  year      = {2024},
+  number    = {5},
+  pages     = {64--81},
+  doi       = {10.25198/2077-7175-2024-5-64},
+  language  = {russian},
+  keywords  = {core; russian; risk; cities; recent},
+  indexing  = {ВАК; РИНЦ},
+  verified  = {Crossref (original-title field); CyberLeninka}
+}
+
+@article{ilyina2025pedestrians,
+  author    = {Ильина, И. Е. and Перекусихина, К. А. and Рассоха, В. И.},
+  author_en = {Ilyina, I. E. and Perekusikhina, K. A. and Rassokha, V. I.},
+  title     = {Анализ факторов дорожно-транспортных происшествий с участием пешеходов},
+  title_en  = {Determining the factors of an accident involving pedestrians},
+  journal   = {Интеллект. Инновации. Инвестиции},
+  journal_en= {Intellect. Innovations. Investments},
+  year      = {2025},
+  number    = {5},
+  pages     = {64--75},
+  doi       = {10.25198/2077-7175-2025-5-64},
+  language  = {russian},
+  keywords  = {core; russian; pedestrians; factors; recent},
+  indexing  = {ВАК; РИНЦ},
+  verified  = {Crossref; CyberLeninka (full RU names)}
+}
+
+@article{ilyina2025indices,
+  author    = {Ильина, И. Е. and Витвицкий, Е. Е.},
+  author_en = {Ilyina, Irina E. and Vitvitsky, Evgeny E.},
+  title     = {Индексы для оценки уровня безопасности дорожного движения в регионах},
+  title_en  = {Indices for assessing road safety levels in the regions of Russia},
+  journal   = {Вестник СибАДИ},
+  journal_en= {The Russian Automobile and Highway Industry Journal},
+  year      = {2025},
+  volume    = {22},
+  number    = {1},
+  pages     = {68--77},
+  doi       = {10.26518/2071-7296-2025-22-1-68-77},
+  language  = {russian},
+  keywords  = {core; russian; regional-indices; target-journal; recent},
+  indexing  = {ВАК; РИНЦ; RCSI White List level 2; DOAJ},
+  verified  = {Crossref; vestnik.sibadi.org OJS meta}
+}
+
+@article{ponomareva2022mortality,
+  author    = {Пономарева, Е. А. and Савина, А. Д.},
+  author_en = {Ponomareva, Ekaterina and Savina, Alexandra},
+  title     = {Факторы, влияющие на смертность в ДТП},
+  title_en  = {Factors Influencing Traffic Accident Mortality},
+  journal   = {Экономическая политика},
+  journal_en= {Economic Policy},
+  year      = {2022},
+  volume    = {17},
+  number    = {4},
+  pages     = {128--153},
+  doi       = {10.18288/1994-5124-2022-4-128-153},
+  language  = {russian},
+  keywords  = {core; russian; severity; logit; GIBDD-cards},
+  indexing  = {Scopus likely; ВАК; РИНЦ},
+  verified  = {Crossref; CyberLeninka}
+}
+
+@article{velichko2024moscow,
+  author    = {Величко, В. А.},
+  author_en = {Velichko, V. A.},
+  title     = {Сравнение безопасности наземных и подземных пешеходных переходов на примере города Москвы},
+  title_en  = {A Comparison of the Safety of At-Grade Pedestrian Crossings and Underpasses in {M}oscow},
+  journal   = {Городские исследования и практики},
+  journal_en= {Urban Studies and Practices},
+  year      = {2024},
+  volume    = {9},
+  number    = {3},
+  pages     = {67--77},
+  doi       = {10.17323/usp93202467-77},
+  language  = {russian},
+  keywords  = {core; russian; MOSCOW; dtp-stat; pedestrians; closest-prior; recent},
+  indexing  = {ВАК; РИНЦ},
+  verified  = {Crossref; usp.hse.ru OJS meta (EN title); CyberLeninka full text (uses «Карта ДТП» data)}
+}
+
+@article{kulakova2023mkdtp,
+  author    = {Кулакова, Т. В. and Моисеева, М. А. and Шулика, Ю. Е. and Щукина, Е. М.},
+  author_en = {Kulakova, T. V. and Moiseeva, M. A. and Shulika, Yu. E. and Shchukina, E. M.},
+  title     = {Оценка эффекта от некапиталоёмких мероприятий по сокращению аварийности в местах концентрации ДТП в крупнейших российских городах},
+  title_en  = {Evaluation of the effect from non-capital-intensive measures to reduce the accident rate in road accident concentration spots in major {R}ussian cities},
+  journal   = {Псковский регионологический журнал},
+  journal_en= {Pskov Journal of Regional Studies},
+  year      = {2023},
+  volume    = {19},
+  number    = {3},
+  pages     = {158--175},
+  doi       = {10.37490/S221979310026760-9},
+  language  = {russian},
+  keywords  = {core; russian; dtp-stat; DBSCAN; MKDTP; BKD; closest-prior; recent},
+  indexing  = {ВАК; РИНЦ},
+  verified  = {Crossref (lists only Shulika — incomplete metadata); CyberLeninka (all 4 authors, pages 158–175)}
+}
+
+@article{zagorodnikh2025ranking,
+  author    = {Загородних, Н. А. and Константинов, И. С.},
+  author_en = {Zagorodnikh, Nikolay A. and Konstantinov, Igor S.},
+  title     = {Методология выявления и ранжирования очагов ДТП на основе пространственного анализа и программно-целевого подхода},
+  title_en  = {Methodology for identifying and ranking road traffic accident hotspots based on spatial analysis and program-targeted approach},
+  journal   = {Computational Nanotechnology},
+  year      = {2025},
+  volume    = {12},
+  number    = {5},
+  pages     = {11--28},
+  doi       = {10.33693/2313-223X-2025-12-5-11-28},
+  language  = {russian},
+  keywords  = {core; russian; KDE; Gi*; MKDTP-ranking; recent},
+  indexing  = {ВАК; РИНЦ},
+  verified  = {Crossref; CyberLeninka}
+}
+
+@article{makarova2025pedestrian,
+  author   = {Makarova, Irina and Gubacheva, Larisa and Gabsalikhova, Larisa and Mavrin, Vadim and Boyko, Aleksey},
+  title    = {Developing Intelligent Integrated Solutions to Improve Pedestrian Safety for Sustainable Urban Mobility},
+  journal  = {Sustainability},
+  year     = {2025},
+  volume   = {17},
+  number   = {19},
+  pages    = {8847},
+  doi      = {10.3390/su17198847},
+  keywords = {core; russian-authors; pedestrians; recent},
+  indexing = {Scopus/WoS},
+  verified = {Crossref; abstract via OpenAlex}
+}
+
+@article{petrov2024jsr,
+  author   = {Petrov, Artur I. and Likhajrova, Evgeniia V.},
+  title    = {Sustainable Improvement of Road Safety in {R}ussian Cities: General Trends and the Dialectical Contradictions in the Structure of Risks of Fatalities in Road Traffic Accidents},
+  journal  = {Journal of Sustainability Research},
+  year     = {2024},
+  volume   = {6},
+  number   = {3},
+  pages    = {e240042},
+  doi      = {10.20900/jsr20240042},
+  keywords = {core; russian-authors; cities; risk; recent},
+  indexing = {international OA (Hapres); Scopus/WoS status uncertain},
+  verified = {Crossref (no authors in record); authors from publisher PDF first page}
+}
+
+% =====================================================================
+% RESERVE (verified; use to swap in / for Discussion)
+% =====================================================================
+
+@article{getis1992analysis,
+  author   = {Getis, Arthur and Ord, J. K.},
+  title    = {The Analysis of Spatial Association by Use of Distance Statistics},
+  journal  = {Geographical Analysis},
+  year     = {1992}, volume = {24}, number = {3}, pages = {189--206},
+  doi      = {10.1111/j.1538-4632.1992.tb00261.x},
+  keywords = {reserve; hotspot-methods; Gi*}, indexing = {Scopus/WoS}, verified = {Crossref}
+}
+
+@article{okabe2009nkde,
+  author   = {Okabe, Atsuyuki and Satoh, Toshiaki and Sugihara, Kokichi},
+  title    = {A kernel density estimation method for networks, its computational method and a {GIS}-based tool},
+  journal  = {International Journal of Geographical Information Science},
+  year     = {2009}, volume = {23}, number = {1}, pages = {7--32},
+  doi      = {10.1080/13658810802475491},
+  keywords = {reserve; hotspot-methods; NKDE}, indexing = {Scopus/WoS}, verified = {Crossref}
+}
+
+@article{xie2013integrated,
+  author   = {Xie, Zhixiao and Yan, Jun},
+  title    = {Detecting traffic accident clusters with network kernel density estimation and local spatial statistics: an integrated approach},
+  journal  = {Journal of Transport Geography},
+  year     = {2013}, volume = {31}, pages = {64--71},
+  doi      = {10.1016/j.jtrangeo.2013.05.009},
+  keywords = {reserve; hotspot-methods; NKDE+Gi*}, indexing = {Scopus/WoS}, verified = {Crossref}
+}
+
+@inproceedings{ester1996dbscan,
+  author    = {Ester, Martin and Kriegel, Hans-Peter and Sander, J{\"o}rg and Xu, Xiaowei},
+  title     = {A Density-Based Algorithm for Discovering Clusters in Large Spatial Databases with Noise},
+  booktitle = {Proceedings of the Second International Conference on Knowledge Discovery and Data Mining (KDD-96)},
+  year      = {1996}, pages = {226--231}, publisher = {AAAI Press},
+  url       = {https://cdn.aaai.org/KDD/1996/KDD96-037.pdf},
+  keywords  = {reserve; hotspot-methods; DBSCAN; conference}, indexing = {conference (no DOI)},
+  verified  = {AAAI PDF (title, authors, last page 231)}
+}
+
+@inproceedings{campello2013hdbscan,
+  author    = {Campello, Ricardo J. G. B. and Moulavi, Davoud and Sander, Joerg},
+  title     = {Density-Based Clustering Based on Hierarchical Density Estimates},
+  booktitle = {Advances in Knowledge Discovery and Data Mining (PAKDD 2013), Lecture Notes in Computer Science, vol. 7819},
+  year      = {2013}, pages = {160--172},
+  doi       = {10.1007/978-3-642-37456-2_14},
+  keywords  = {reserve; hotspot-methods; HDBSCAN; conference}, indexing = {Scopus (LNCS)}, verified = {Crossref}
+}
+
+@article{mcinnes2017hdbscan,
+  author   = {McInnes, Leland and Healy, John and Astels, Steve},
+  title    = {hdbscan: Hierarchical density based clustering},
+  journal  = {The Journal of Open Source Software},
+  year     = {2017}, volume = {2}, number = {11}, pages = {205},
+  doi      = {10.21105/joss.00205},
+  keywords = {reserve; software; HDBSCAN}, indexing = {peer-reviewed software journal; Scopus status uncertain}, verified = {Crossref}
+}
+
+@article{lord2010crashfrequency,
+  author   = {Lord, Dominique and Mannering, Fred},
+  title    = {The statistical analysis of crash-frequency data: A review and assessment of methodological alternatives},
+  journal  = {Transportation Research Part A: Policy and Practice},
+  year     = {2010}, volume = {44}, number = {5}, pages = {291--305},
+  doi      = {10.1016/j.tra.2010.02.001},
+  keywords = {reserve; crash-frequency; EB}, indexing = {Scopus/WoS}, verified = {Crossref}
+}
+
+@article{le2022kdegi,
+  author   = {Le, Khanh Giang and Liu, Pei and Lin, Liang-Tay},
+  title    = {Traffic accident hotspot identification by integrating kernel density estimation and spatial autocorrelation analysis: a case study},
+  journal  = {International Journal of Crashworthiness},
+  year     = {2022}, volume = {27}, number = {2}, pages = {543--553},
+  doi      = {10.1080/13588265.2020.1826800},
+  keywords = {reserve; hotspot-methods; KDE+Moran+Gi*}, indexing = {Scopus/WoS}, verified = {Crossref; abstract via OpenAlex}
+}
+
+@article{songchitruksa2010gi,
+  author   = {Songchitruksa, Praprut and Zeng, Xiaosi},
+  title    = {Getis--Ord Spatial Statistics to Identify Hot Spots by Using Incident Management Data},
+  journal  = {Transportation Research Record: Journal of the Transportation Research Board},
+  year     = {2010}, volume = {2165}, number = {1}, pages = {42--51},
+  doi      = {10.3141/2165-05},
+  keywords = {reserve; hotspot-methods; Gi*}, indexing = {Scopus/WoS}, verified = {Crossref}
+}
+
+@article{caliskan2023stc,
+  author   = {{\c C}al{\i}{\c s}kan, Murat and Anbaro{\u g}lu, Berk},
+  title    = {Space Time Cube analytics in {QGIS} and {P}ython for hot spot detection},
+  journal  = {SoftwareX},
+  year     = {2023}, volume = {24}, pages = {101498},
+  doi      = {10.1016/j.softx.2023.101498},
+  keywords = {reserve; software; space-time Gi*; recent}, indexing = {Scopus/WoS}, verified = {Crossref; abstract via OpenAlex}
+}
+
+@article{drawve2016metric,
+  author   = {Drawve, Grant},
+  title    = {A Metric Comparison of Predictive Hot Spot Techniques and {RTM}},
+  journal  = {Justice Quarterly},
+  year     = {2016}, volume = {33}, number = {3}, pages = {369--397},
+  doi      = {10.1080/07418825.2014.904393},
+  keywords = {reserve; evaluation; PAI; RRI; crime}, indexing = {Scopus/WoS}, verified = {Crossref; abstract via OpenAlex}
+}
+
+@article{adepeju2016metrics,
+  author   = {Adepeju, Monsuru and Rosser, Gabriel and Cheng, Tao},
+  title    = {Novel evaluation metrics for sparse spatio-temporal point process hotspot predictions -- a crime case study},
+  journal  = {International Journal of Geographical Information Science},
+  year     = {2016}, volume = {30}, number = {11}, pages = {2133--2154},
+  doi      = {10.1080/13658816.2016.1159684},
+  keywords = {reserve; evaluation; crime}, indexing = {Scopus/WoS}, verified = {Crossref; abstract via Semantic Scholar}
+}
+
+@article{cheng2005hsid,
+  author   = {Cheng, Wen and Washington, Simon P.},
+  title    = {Experimental evaluation of hotspot identification methods},
+  journal  = {Accident Analysis \& Prevention},
+  year     = {2005}, volume = {37}, number = {5}, pages = {870--881},
+  doi      = {10.1016/j.aap.2005.04.015},
+  keywords = {reserve; evaluation; EB}, indexing = {Scopus/WoS}, verified = {Crossref; PubMed PMID 15963449}
+}
+
+@article{cheng2008criteria,
+  author   = {Cheng, Wen and Washington, Simon},
+  title    = {New Criteria for Evaluating Methods of Identifying Hot Spots},
+  journal  = {Transportation Research Record: Journal of the Transportation Research Board},
+  year     = {2008}, volume = {2083}, number = {1}, pages = {76--85},
+  doi      = {10.3141/2083-09},
+  keywords = {reserve; evaluation; site-consistency}, indexing = {Scopus/WoS}, verified = {Crossref (abstract in record)}
+}
+
+@article{montella2010hsid,
+  author   = {Montella, Alfonso},
+  title    = {A comparative analysis of hotspot identification methods},
+  journal  = {Accident Analysis \& Prevention},
+  year     = {2010}, volume = {42}, number = {2}, pages = {571--581},
+  doi      = {10.1016/j.aap.2009.09.025},
+  keywords = {reserve; evaluation; site-consistency; EB}, indexing = {Scopus/WoS}, verified = {Crossref; PubMed PMID 20159081}
+}
+
+@article{andresen2011stability,
+  author   = {Andresen, Martin A. and Malleson, Nicolas},
+  title    = {Testing the Stability of Crime Patterns: Implications for Theory and Policy},
+  journal  = {Journal of Research in Crime and Delinquency},
+  year     = {2011}, volume = {48}, number = {1}, pages = {58--82},
+  doi      = {10.1177/0022427810384136},
+  keywords = {reserve; stability; crime}, indexing = {Scopus/WoS}, verified = {Crossref; abstract via OpenAlex}
+}
+
+@inproceedings{lundberg2017shap,
+  author    = {Lundberg, Scott M. and Lee, Su-In},
+  title     = {A Unified Approach to Interpreting Model Predictions},
+  booktitle = {Advances in Neural Information Processing Systems 30 (NIPS 2017)},
+  year      = {2017},
+  url       = {https://proceedings.neurips.cc/paper/2017/hash/8a20a8621978632d76c43dfd28b67767-Abstract.html},
+  keywords  = {reserve; SHAP; conference}, indexing = {Scopus likely (NeurIPS) — conference, no DOI},
+  verified  = {proceedings.neurips.cc page}
+}
+
+@inproceedings{ke2017lightgbm,
+  author    = {Ke, Guolin and Meng, Qi and Finley, Thomas and Wang, Taifeng and Chen, Wei and Ma, Weidong and Ye, Qiwei and Liu, Tie-Yan},
+  title     = {{LightGBM}: A Highly Efficient Gradient Boosting Decision Tree},
+  booktitle = {Advances in Neural Information Processing Systems 30 (NIPS 2017)},
+  year      = {2017},
+  url       = {https://proceedings.neurips.cc/paper/2017/hash/6449f44a102fde848669bdd9eb6b76fa-Abstract.html},
+  keywords  = {reserve; GBDT; conference}, indexing = {Scopus likely (NeurIPS) — conference, no DOI},
+  verified  = {proceedings.neurips.cc page}
+}
+
+@article{mannering2020bigdata,
+  author   = {Mannering, Fred and Bhat, Chandra R. and Shankar, Venky and Abdel-Aty, Mohamed},
+  title    = {Big data, traditional data and the tradeoffs between prediction and causality in highway-safety analysis},
+  journal  = {Analytic Methods in Accident Research},
+  year     = {2020}, volume = {25}, pages = {100113},
+  doi      = {10.1016/j.amar.2020.100113},
+  keywords = {reserve; severity; prediction-vs-causality}, indexing = {Scopus/WoS}, verified = {Crossref}
+}
+
+@article{parsa2020xgbshap,
+  author   = {Parsa, Amir Bahador and Movahedi, Ali and Taghipour, Homa and Derrible, Sybil and Mohammadian, Abolfazl (Kouros)},
+  title    = {Toward safer highways, application of {XGBoost} and {SHAP} for real-time accident detection and feature analysis},
+  journal  = {Accident Analysis \& Prevention},
+  year     = {2020}, volume = {136}, pages = {105405},
+  doi      = {10.1016/j.aap.2019.105405},
+  keywords = {reserve; SHAP; XGBoost}, indexing = {Scopus/WoS}, verified = {Crossref; PubMed PMID 31864931}
+}
+
+@article{wen2021lightgbm,
+  author   = {Wen, Xiao and Xie, Yuanchang and Wu, Lingtao and Jiang, Liming},
+  title    = {Quantifying and comparing the effects of key risk factors on various types of roadway segment crashes with {LightGBM} and {SHAP}},
+  journal  = {Accident Analysis \& Prevention},
+  year     = {2021}, volume = {159}, pages = {106261},
+  doi      = {10.1016/j.aap.2021.106261},
+  keywords = {reserve; SHAP; LightGBM}, indexing = {Scopus/WoS}, verified = {Crossref; PubMed PMID 34182322}
+}
+
+@article{chawla2002smote,
+  author   = {Chawla, N. V. and Bowyer, K. W. and Hall, L. O. and Kegelmeyer, W. P.},
+  title    = {{SMOTE}: Synthetic Minority Over-sampling Technique},
+  journal  = {Journal of Artificial Intelligence Research},
+  year     = {2002}, volume = {16}, pages = {321--357},
+  doi      = {10.1613/jair.953},
+  keywords = {reserve; imbalance}, indexing = {Scopus/WoS}, verified = {Crossref}
+}
+
+@article{fiorentini2020imbalanced,
+  author   = {Fiorentini, Nicholas and Losa, Massimo},
+  title    = {Handling Imbalanced Data in Road Crash Severity Prediction by Machine Learning Algorithms},
+  journal  = {Infrastructures},
+  year     = {2020}, volume = {5}, number = {7}, pages = {61},
+  doi      = {10.3390/infrastructures5070061},
+  keywords = {reserve; imbalance; severity}, indexing = {Scopus/ESCI}, verified = {Crossref; abstract via OpenAlex}
+}
+
+@article{saito2015prc,
+  author   = {Saito, Takaya and Rehmsmeier, Marc},
+  title    = {The Precision-Recall Plot Is More Informative than the {ROC} Plot When Evaluating Binary Classifiers on Imbalanced Datasets},
+  journal  = {PLOS ONE},
+  year     = {2015}, volume = {10}, number = {3}, pages = {e0118432},
+  doi      = {10.1371/journal.pone.0118432},
+  keywords = {reserve; imbalance; metrics}, indexing = {Scopus/WoS}, verified = {Crossref}
+}
+
+@article{gao2024gnn,
+  author   = {Gao, Xiaowei and Jiang, Xinke and Haworth, James and Zhuang, Dingyi and Wang, Shenhao and Chen, Huanfa and Law, Stephen},
+  title    = {Uncertainty-aware probabilistic graph neural networks for road-level traffic crash prediction},
+  journal  = {Accident Analysis \& Prevention},
+  year     = {2024}, volume = {208}, pages = {107801},
+  doi      = {10.1016/j.aap.2024.107801},
+  keywords = {reserve; crash-prediction; recent}, indexing = {Scopus/WoS}, verified = {Crossref (via OpenAlex); PubMed PMID 39362109}
+}
+
+@article{petrov2021esc,
+  author    = {Петров, А. И. and Колесов, В. И.},
+  author_en = {Petrov, Artur and Kolesov, Viktor},
+  title     = {Дорожно-транспортная аварийность в России: основные социально-экономические факторы ее формирования и пространственно-временные особенности},
+  title_en  = {Car Accidents in {R}ussia: Main Socio-Economic Factors of Its Formation and Spatiotemporal Features},
+  journal   = {Экономические и социальные перемены: факты, тенденции, прогноз},
+  journal_en= {Economic and Social Changes: Facts, Trends, Forecast},
+  year      = {2021}, volume = {14}, number = {1}, pages = {199--220},
+  doi       = {10.15838/esc.2021.1.73.14},
+  language  = {russian},
+  keywords  = {reserve; russian; severity; regions}, indexing = {Scopus/WoS-ESCI likely; ВАК},
+  verified  = {Crossref; CyberLeninka (vol/issue); pages from publisher page — re-check}
+}
+
+@article{pechatnova2022factors,
+  author    = {Печатнова, Е. В. and Кузнецов, В. Н.},
+  author_en = {Pechatnova, E. V. and Kuznetsov, V. N.},
+  title     = {Факторы возникновения дорожно-транспортных происшествий с особо тяжкими последствиями},
+  title_en  = {Factors causing road traffic accidents with particularly serious consequence},
+  journal   = {Вестник СибАДИ}, journal_en = {The Russian Automobile and Highway Industry Journal},
+  year      = {2022}, volume = {19}, number = {2}, pages = {224--235},
+  doi       = {10.26518/2071-7296-2022-19-2-224-235},
+  language  = {russian},
+  keywords  = {reserve; russian; severity; target-journal}, indexing = {ВАК; РИНЦ; DOAJ},
+  verified  = {Crossref; vestnik.sibadi.org OJS meta}
+}
+
+@article{likhayrova2024tyumen,
+  author    = {Лихайрова, Е. В. and Петров, А. И.},
+  author_en = {Likhajrova, Evgeniia V. and Petrov, Artur I.},
+  title     = {Анализ причин изменения пространственной структуры рисков дорожно-транспортной аварийности в Тюмени},
+  title_en  = {Analysis of the causes of changes in the spatial structure of traffic accident risk in {T}yumen},
+  journal   = {Архитектура, строительство, транспорт}, journal_en = {Architecture, Construction, Transport},
+  year      = {2024}, number = {3(109)}, pages = {99--110},
+  doi       = {10.31660/2782-232X-2024-3-99-110},
+  language  = {russian},
+  keywords  = {reserve; russian; spatial-change; recent}, indexing = {ВАК; РИНЦ},
+  verified  = {Crossref; CyberLeninka}
+}
+
+@article{smirnov2023ontology,
+  author    = {Смирнов, А. В. and Тесля, Н. Н.},
+  author_en = {Smirnov, Alexander A. and Teslya, Nikolay N.},
+  title     = {Онтолого-ориентированная геоаналитика для определения мест концентрации ДТП на участках улично-дорожной сети},
+  title_en  = {Ontology-oriented geoanalytics for determining concentration of road accidents on areas of the road network},
+  journal   = {Труды Кольского научного центра РАН. Серия: Технические науки},
+  journal_en= {Transactions of the Kola Science Centre of RAS. Series: Engineering Sciences},
+  year      = {2023}, volume = {14}, number = {7}, pages = {79--85},
+  doi       = {10.37614/2949-1215.2023.14.7.008},
+  language  = {russian},
+  keywords  = {reserve; russian; DBSCAN; MKDTP; GIBDD}, indexing = {ВАК; РИНЦ},
+  verified  = {Crossref (original-title); CyberLeninka}
+}
+
+@article{lebedeva2025minsk,
+  author    = {Лебедева, М. Р. and Лобашов, А. О. and Семченков, С. С.},
+  author_en = {Lebedeva, M. and Lobashov, A. and Semchenkov, S.},
+  title     = {Методы анализа данных и прогнозирования аварийности на примере города Минска},
+  title_en  = {Methods of data analysis and accident rate prediction on the example of the city of {M}insk},
+  journal   = {Вестник Полоцкого государственного университета. Серия B. Промышленность. Прикладные науки},
+  journal_en= {Herald of Polotsk State University. Series B. Industry. Applied Sciences},
+  year      = {2025}, number = {1}, pages = {70--76},
+  doi       = {10.52928/2070-1616-2025-51-1-70-76},
+  language  = {russian},
+  keywords  = {reserve; belarus; forecasting; RF; recent}, indexing = {ВАК РБ; РИНЦ},
+  verified  = {Crossref; CyberLeninka}
+}
+
+@article{shokhirev2025khabarovsk,
+  author    = {Шохирев, Е. В. and Володькин, П. П. and Лазарев, В. А. and Константинов, А. В.},
+  author_en = {Shokhirev, E. V. and Volodkin, P. P. and Lazarev, V. A. and Konstantinov, A. V.},
+  title     = {Разработка авторегрессионной нейросетевой модели для прогнозирования аварийности на территории Хабаровского края},
+  title_en  = {Development of an autoregressive neural network model for predicting accidents in the {K}habarovsk Territory},
+  journal   = {Интеллект. Инновации. Инвестиции}, journal_en = {Intellect. Innovations. Investments},
+  year      = {2025}, number = {3}, pages = {107--120},
+  doi       = {10.25198/2077-7175-2025-3-107},
+  language  = {russian},
+  keywords  = {reserve; russian; forecasting; NN; recent}, indexing = {ВАК; РИНЦ},
+  verified  = {Crossref; CyberLeninka (RU title/names)}
+}
+
+@article{yakupova2020factors,
+  author   = {Yakupova, Gulnara and Buyvol, Polina and Shepelev, Vladimir},
+  title    = {Identification of factors affecting the road traffic injury rate},
+  journal  = {Transportation Research Procedia},
+  year     = {2020}, volume = {50}, pages = {735--742},
+  doi      = {10.1016/j.trpro.2020.10.086},
+  keywords = {reserve; russian-authors; severity-factors}, indexing = {Scopus (proceedings journal)},
+  verified = {Crossref; abstract via OpenAlex}
+}
+
+@inproceedings{makarova2020severity,
+  author    = {Makarova, Irina and Buyvol, Polina and Yakupova, Gulnara and Mukhametdinov, Eduard and Pashkevich, Anton},
+  title     = {Identification for Factors and Causes Affecting the Traffic Accident Severity},
+  booktitle = {2020 XII International Science-Technical Conference AUTOMOTIVE SAFETY},
+  year      = {2020}, pages = {1--6},
+  doi       = {10.1109/AutomotiveSafety47494.2020.9293502},
+  keywords  = {reserve; russian-authors; severity; decision-tree; conference}, indexing = {Scopus likely (IEEE conf.)},
+  verified  = {Crossref; abstract via OpenAlex}
+}
+
+@article{kuzmenko2020pedestrians,
+  author    = {Кузьменко, Е. А. and Донченко, Д. С. and Рагозин, В. О.},
+  title     = {Анализ данных для прогнозирования вероятности дорожно-транспортных происшествий с участием пешеходов},
+  journal   = {Инженерный вестник Дона},
+  year      = {2020}, number = {6(66)},
+  url       = {https://cyberleninka.ru/article/n/analiz-dannyh-dlya-prognozirovaniya-veroyatnosti-dorozhno-transportnyh-proisshestviy-s-uchastiem-peshehodov},
+  language  = {russian},
+  keywords  = {reserve; russian; Moscow-open-data; CatBoost; no-DOI}, indexing = {ВАК; РИНЦ},
+  verified  = {CyberLeninka page and full text (no DOI; article-number pagination — take from ivdon.ru)}
+}
+
+@article{akchurin2023dbscan,
+  author    = {Акчурин, А. В. and Кондратова, Ю. Н.},
+  title     = {Определение областей повышенной дорожно-транспортной опасности на карте города с помощью кластеризации данных},
+  journal   = {Математическое моделирование, компьютерный и натурный эксперимент в естественных науках},
+  year      = {2023}, number = {4},
+  url       = {https://cyberleninka.ru/article/n/opredelenie-oblastey-povyshennoy-dorozhno-transportnoy-opasnosti-na-karte-goroda-s-pomoschyu-klasterizatsii-dannyh},
+  note      = {DOI 10.24412/2541-9269-2023-4-02-11 is printed on CyberLeninka but does not resolve in Crossref},
+  language  = {russian},
+  keywords  = {reserve; russian; DBSCAN; k-means; stat.gibdd}, indexing = {РИНЦ only (ВАК status not verified)},
+  verified  = {CyberLeninka page}
+}
+
+@article{mosin2023automl,
+  author    = {Мосин, К. К. and Ковалевский, В. Э. and Жукова, Н. А.},
+  title     = {Использование методов автоматизированного машинного обучения для классификации дорожно-транспортных происшествий},
+  journal   = {Интеллектуальные технологии на транспорте},
+  year      = {2023}, number = {2(34)},
+  url       = {https://cyberleninka.ru/article/n/ispolzovanie-metodov-avtomatizirovannogo-mashinnogo-obucheniya-dlya-klassifikatsii-dorozhno-transportnyh-proisshestviy},
+  language  = {russian},
+  keywords  = {reserve; russian; AutoML; severity; no-DOI}, indexing = {РИНЦ (ВАК status not verified)},
+  verified  = {CyberLeninka page (no DOI; pages to be taken from eLibrary)}
+}

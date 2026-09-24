@@ -1,0 +1,12 @@
+# raw data: download from dtp-stat.ru (see README); redistribution of the raw file is not addressed by the source
+data/*.geojson
+data/*.zip
+results/crashes.parquet
+# manuscript text, journal forms and working notes are not published here
+paper/*
+!paper/figures/
+journal/
+00_requirements.md
+lit/notes.md
+__pycache__/
+*.pyc
